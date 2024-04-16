@@ -10,9 +10,19 @@ Bikeshare data analysis
 This project develops the code to read .csv files containing information/data about bike sharing in 3 cities in USA (Chicago, NewYork & Washington).
 The data has comma sperated values in rows, having the following columns - 'Start Time', 'End Time', 'Trip Duration', 'Start Station', 'End Station', 'User Type', 'Gender', 'Birth Year'. We use Pandas dataframe functionality to create few new columns ( 'hour', 'Start_End_Combo', 'day_of_week' ) and showcase information ( using sum(), mean(), mode() functionalities of Pandas dataframe ).
 
+bikeshare_2.py has following functions 
+
+get_filters() - Asks user to specify a city, month, and day to analyze.
+load_data(city, month, day) -  Loads data for the specified city and filters by month and day if applicable.
+
+time_stats(df) - Displays statistics on the most frequent times of travel - most common month, most common day of week, most comman hour
+station_stats(df) - Displays statistics on the most popular stations - most used start station, most used end station
+trip_duration_stats(df) - Displays statistics on the total and average trip duration.
+
 ### Files used
 Data .csv files are not checked in.
 Python code, bikeshare_2.py is checked in.
+
 
 ### Credits
 This is from Udacity course.
