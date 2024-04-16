@@ -19,6 +19,11 @@ time_stats(df) - Displays statistics on the most frequent times of travel - most
 station_stats(df) - Displays statistics on the most popular stations - most used start station, most used end station
 trip_duration_stats(df) - Displays statistics on the total and average trip duration.
 
+user_stats(df) - Displays statistics on bikeshare user, their Gender, UserType, and year of birth
+
+display_data(df) - Displays 5 rows of data, of the process Pandas data frame, at a time
+
+
 ### Files used
 Data .csv files are not checked in.
 Python code, bikeshare_2.py is checked in.
