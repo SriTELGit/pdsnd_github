@@ -169,16 +169,19 @@ def display_data(df):
     showD = True
     start_loc = 0
     while ( (showD == True) and (start_loc < df.shape[0]) ):
-        ansyn = input('Do you want to see next 5 rows of data? (yes/no): ')
+        ansyn = input('Do you want to see next 3 rows of data? (yes/no): ')
         ansyn = ansyn.lower()
         if(ansyn == 'yes'):
-            print(df.iloc[start_loc:(start_loc+5)])
+            print(df.iloc[start_loc:(start_loc+3)])
             showD = True
-            start_loc += 5
+            start_loc += 3
         else:
             showD = False
             
-        
+
+def restartOrNot():
+    restart = input('\nWould you like to restart? Enter yes or no.\n')
+    return restart
 
 def main():
     while True:
@@ -192,8 +195,8 @@ def main():
 
         display_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restrt = restartOrNot()
+        if restrt.lower() != 'yes':
             break
 
 
